@@ -2,9 +2,7 @@ import numpy as np
 
 def FizzBuzz(start, finish):
     nums = np.arange(start, finish + 1)
-
-    out = np.array(nums, dtype=object)
-    out[:] = nums.astype(str)
+    out = nums.astype(object)
 
     m15 = (nums % 15 == 0)
     m3 = (nums % 3 == 0) & ~m15
